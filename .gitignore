@@ -1,0 +1,55 @@
+# ---- Raw & processed data (large, regenerable) ----
+data/raw/Audio_Speech_Actors_01-24/
+data/processed/mel_spectrograms/*
+data/processed/pitch_pairs/*
+!data/processed/mel_spectrograms/.gitkeep
+!data/processed/pitch_pairs/.gitkeep
+
+# metadata.csv is usually small + reproducible — ignore it too if it's auto-generated
+# by build_metadata.py, since regenerating is cheap and avoids merge conflicts
+#tracked here
+#data/metadata.csv
+
+# ---- Model checkpoints ----
+checkpoints/pitch_encoder/*
+!checkpoints/pitch_encoder/.gitkeep
+*.pt
+*.pth
+*.ckpt
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ---- Logs / experiment tracking ----
+*.log
+wandb/
+runs/
+lightning_logs/
+tensorboard/
+
+# ---- Environment / secrets ----
+.env
+.env.local
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
