@@ -1,14 +1,19 @@
 # ---- Raw & processed data (large, regenerable) ----
 data/raw/Audio_Speech_Actors_01-24/
 
-data/processed/mel_spectrograms/*
-!data/processed/mel_spectrograms/.gitkeep
+data/processed/mel/*
+!data/processed/mel/.gitkeep
 
-data/processed/pitch_pairs/*
-!data/processed/pitch_pairs/.gitkeep
+data/processed/pitch_shifted/*
+!data/processed/pitch_shifted/.gitkeep
+
+data/processed/mel_pitch_shifted/*
+!data/processed/mel_pitch_shifted/.gitkeep
 
 data/processed/barcodes/*
 !data/processed/barcodes/.gitkeep
+
+data/processed/*.csv
 
 # metadata.csv is tracked on purpose — small, deterministic, and
 # needed for reproducible grading/plotting. Do NOT ignore it.
