@@ -1,5 +1,6 @@
 # ---- Raw & processed data (large, regenerable) ----
 data/raw/Audio_Speech_Actors_01-24/
+data/metadata.csv
 
 data/processed/mel/*
 !data/processed/mel/.gitkeep
